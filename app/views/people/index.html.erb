@@ -1,0 +1,6 @@
+<h1>Families Sorted by Number of Members</h1>
+<% @families.each do |last_name, members| %>
+  <p><%= last_name %>: <%= members.map{|member| member.first_name}.join(", ") %></p>
+<% end %>
+<br>
+<%=link_to "New try", root_path%>
